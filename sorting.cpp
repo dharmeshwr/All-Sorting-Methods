@@ -22,7 +22,7 @@ auto measureTime(function<void(vector<int> &)> sortFunction, vector<int> &nums)
 {
     auto start = high_resolution_clock::now();
     sortFunction(nums);
-    auto stop     = high_resolution_clock::now();
+    auto stop  = high_resolution_clock::now();
     auto duration = duration_cast<nanoseconds>(stop - start);
     return duration;
 }
